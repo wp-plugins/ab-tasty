@@ -29,7 +29,7 @@
 				If you have any question, feel free to contact us with using the form below.</p>				</p>
 			</td>
 			<td>
-			<img src="../wp-content/plugins/ABTasty/img/logo_AB_Tasty.png" title="ABTasty" style="margin-left:25px" alt="ABTasty"/>
+			<img src="../wp-content/plugins/ab-tasty/img/logo_AB_Tasty.png" title="ABTasty" style="margin-left:25px" alt="ABTasty"/>
 
 			</td>
 		</tr>
@@ -77,9 +77,9 @@
                     <h2>How to find your client ID?</h2>
                     <p>
                         In your AB Tasty interface click on "Code".<br>
-						<a href="../wp-content/plugins/ABTasty/img/screen1.png" target="_blank"><img src="../wp-content/plugins/ABTasty/img/screen1.png" width="300px"></a><br><br><br>
+						<a href="../wp-content/plugins/ab-tasty/img/screen1.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen1.png" width="300px"></a><br><br><br>
 						A popup will open, pickup your Client ID in the second area.
-						<a href="../wp-content/plugins/ABTasty/img/screen2.png" target="_blank"><img src="../wp-content/plugins/ABTasty/img/screen2.png" width="300px"></a>
+						<a href="../wp-content/plugins/ab-tasty/img/screen2.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen2.png" width="300px"></a>
                     </p>
                 </div>
             </td>

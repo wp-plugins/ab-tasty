@@ -6,16 +6,15 @@
  * Version: 1.0
  * Author: ABTasty
  * Author URI: http://www.abtasty.com
- * License: GPLv3
+ * License: none
  * */
 
-$defaultText = 'Insert your ID here';
 
 /* Runs when plugin is activated */
 register_activation_hook(__FILE__,'abtasty_install'); 
 function abtasty_install() {
     /* Creates new database field */
-    add_option("abtasty_js_clientid", $defaultText);
+    add_option("abtasty_js_clientid", '');
 }
 /* Runs on plugin deactivation */
 register_deactivation_hook( __FILE__, 'abtasty_remove' );
@@ -38,9 +37,7 @@ if (is_admin())  {
 add_action('wp_footer','abtasty', 99999);
 function abtasty()
 {
-    if (get_option('abtasty_js_clientid') == $defaultText)
-        return;
     echo "<!-- http://www.abtasty.com -->\n";
-    echo '<script src="//d1447tq2m68ekg.cloudfront.net/' . get_option('abtasty_js_clientid') . '.js" title="AB Tasty : http://www.abtasty.com"></script>' . "\n";
+    echo '<script src="//d1447tq2m68ekg.cloudfront.net/' . get_option('abtasty_js_clientid') . '.js" title="AB Tasty : http://www.abtasty.com"></script>';
 }
 ?>

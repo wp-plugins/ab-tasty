@@ -1,10 +1,9 @@
 === ABTasty ===
-Contributors: guillaume@liwio.com
+Contributors: remi@liwio.com 
 Donate link: 
 Tags: ABTasty, AB Testing
 Requires at least: 3.3
-Tested up to: 3.4
-Stable tag: 1.3
+Tested up to: 3.8Stable tag: 1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

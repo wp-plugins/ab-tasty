@@ -1,5 +1,5 @@
 === ABTasty ===
-Contributors: remi@liwio.com 
+Contributors: www.abtasty.com 
 Donate link: 
 Tags: ABTasty, AB Testing
 Requires at least: 3.3

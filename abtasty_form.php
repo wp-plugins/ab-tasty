@@ -9,7 +9,7 @@
        /* height: 145px;*/
     }
     .abtasty_faq  {
-        height: 94px;
+        height: 170px;
     }
     .abtasty_howto  {
         /*height: 269px;*/
@@ -17,6 +17,8 @@
     .abtasty_contact, .abtasty_actu  {
         height:  411px;
     }
+
+
 </style>
 
 <div class="wrap">
@@ -26,7 +28,7 @@
 				<h1>Welcome on the AB Tasty plugin !</h1>
 				<p>AB Tasty helps you create and manage AB Tests on your website.<br>
 				This plugin will automatically paste the AB Tasty code to your whole website.<br>
-				If you have any question, feel free to contact us with using the form below.</p>				</p>
+				If you have any question, feel free to contact us using the form below.</p>				</p>
 			</td>
 			<td>
 			<img src="../wp-content/plugins/ab-tasty/img/logo_AB_Tasty.png" title="ABTasty" style="margin-left:25px" alt="ABTasty"/>
@@ -50,22 +52,26 @@
                                         ID Client
                                     </label>
                                 </th>
+
                                 <td>
-                                    <?php
-                                      $abtasty_js_clientid = get_option('abtasty_js_clientid');
-                                    ?>
-                                    <input name="abtasty_js_clientid" type="text" id="abtasty_js_clientid"
-                                           value="<?=(empty($abtasty_js_clientid) ? 'Past your client ID here' : $abtasty_js_clientid)?>" class="regular-text"
-                                           <?=(empty($abtasty_js_clientid) ? 'onclick="if(!this._ab_modified) {this.value = \'\';this._ab_modified = true;}"' : '')?>/>
+                                    <?php $abtasty_js_clientid = get_option('abtasty_js_clientid'); ?>
+                                    <input  name="abtasty_js_clientid" type="text" id="abtasty_js_clientid" value="<?php echo empty($abtasty_js_clientid) ? 'Paste your client ID here' : $abtasty_js_clientid; ?>" class="regular-text" <?php echo empty($abtasty_js_clientid) ? 'onclick="if(!this._ab_modified) {this.value = \'\';this._ab_modified = true;}"' : ''; ?> />
                                     <p class="description">
                                         Paste here your client ID in order to activate the plugin on your website
                                     </p>
                                 </td>
+
+
+
+
+
+
                             </tr>
                             <tr valign="top">
                                 <th scope="row"></th>
                                 <td>
-                                    <input type="submit" name="submit" id="submit" class="button-primary" value="Update">
+                                    <input type="submit" name="submit" id="submit" class="button-primary" value="Update"> or 
+									<input type="button" class="button-primary" value="I don't have an account" onclick="window.open('http://en.abtasty.com/offer')">
                                 </td>
                             </tr>
                         </table>
@@ -76,9 +82,10 @@
                 <div class="abtasty_howto">
                     <h2>How to find your client ID?</h2>
                     <p>
-                        In your AB Tasty interface click on "Code".<br>
+                        In your AB Tasty dashboard click on "AB Tasty Tag".<br>
 						<a href="../wp-content/plugins/ab-tasty/img/screen1.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen1.png" width="300px"></a><br><br><br>
-						A popup will open, pickup your Client ID in the second area.
+
+						Pick up your Client ID in the second area.
 						<a href="../wp-content/plugins/ab-tasty/img/screen2.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen2.png" width="300px"></a>
                     </p>
                 </div>
@@ -90,8 +97,10 @@
                 <div class="abtasty_faq">
                     <h2>FAQ</h2>
                     <ul>
-						<li><a target="_blank" href="http://en.abtasty.com/starter-guide_55">Starter Guide</a></li>
-                        <li><a target="_blank" href="http://en.abtasty.com/help/">Online help (<i>Access restricted to clients</i>)</a></li>
+						<li><a href="https://support.abtasty.com/hc/en-us/sections/200282367-Our-Answers" >The more frequently asked questions</a></li>
+						<li><a href="https://support.abtasty.com/hc/en-us/articles/200238677-Quick-Start-Guide" >Quick Starter Guide</a></li>
+                        <li><a href="https://support.abtasty.com/hc/en-us/articles/200288876-How-can-I-test-a-page-that-requires-a-login-or-one-that-requires-session-information-" >How to test a page that requires a login</a></li>
+						<li><a href="https://support.abtasty.com/hc/en-us/articles/200321596-Recommendations-for-validating-a-test-before-publication" >Recommandations before publication</a></li>
                     </ul>
                 </div>
             </td>
@@ -110,8 +119,8 @@
                             $item = $rss->channel->item[$i];
                         ?>
                         <div class="abtasty_article">
-                            <h4><a target="_blank" href="<?php echo str_replace('s=rss','s=wordpress&m=plugin',$item->link); ?>"><?=$item->title?></a></h4>
-                            <p><?=$item->description?></p>
+                            <h4><a target="_blank" href="<?php echo str_replace('s=rss','s=wordpress&m=plugin',$item->link); ?>"><?php echo $item->title; ?></a></h4>
+                            <p><?php echo $item->description; ?></p>
                         </div>
                         <?php
                         }

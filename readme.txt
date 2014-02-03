@@ -1,4 +1,4 @@
-=== Easy-to-use split testing with AB Tasty ===
+=== AB testing with AB Tasty ===
 Contributors: www.abtasty.com 
 Donate link: 
 Tags: AB Tasty, ABTasty, A/B Testing, AB testing, testing, split testing, optimization, ab tests, a b tests, conversion, landing pages, conversion rate, call to action, saas, multivariate

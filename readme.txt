@@ -8,7 +8,7 @@ Stable tag: 1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-AB Tasty enables you to set up A/B tests and multivariate and easily to optimize your conversion rate.
+AB Tasty enables you to set up A/B tests and multivariate easily to optimize your conversion rate.
 
 == Description ==
 Compare the performances of different versions of a same page in real time and give your customers the best experience !

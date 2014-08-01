@@ -38,20 +38,19 @@ add_action('wp_head','abtasty');
 function abtasty()
 {
     echo "<!-- http://www.abtasty.com -->\n";
-    echo '
-	
-	
-	<script>
+?>
+    <script>
     (function(){
-      var ABTastyAccID = "' . get_option('abtasty_js_clientid') . '";
-      var ABTastyTimeout = 2000;
-      var ABTastyIP = "";
-      if("undefined"!==typeof sessionStorage&&"undefined"!==typeof sessionStorage.ABTastyFrameworkCode&&0!=sessionStorage.ABTastyPagesViewed%5)sessionStorage.ABTastyPagesViewed++,"undefined"===typeof sessionStorage.ABTastyDontRun&&eval(sessionStorage.ABTastyFrameworkCode);else{if("undefined"!==typeof sessionStorage&&(void 0==sessionStorage.ABTastyPagesViewed?sessionStorage.ABTastyPagesViewed=0:sessionStorage.ABTastyPagesViewed++,"undefined"!==typeof sessionStorage.ABTastyDontRun))return;var b=(new Date).getTime(),c=document.getElementsByTagName("head")[0],a=document.createElement("script");a.setAttribute("type","text/javascript");a.setAttribute("async","true");a.setAttribute("src","//d1447tq2m68ekg.cloudfront.net/"+ABTastyAccID+".js");/MSIE [678]/.test(window.navigator.userAgent)||(window.stopABTastyAutorun=!0,a.onload=function(){var a=(new Date).getTime()-b;"undefined"!==typeof ABTastyFrameworkCode&&"undefined"!==typeof sessionStorage&&(sessionStorage.ABTastyFrameworkCode=ABTastyFrameworkCode);a>ABTastyTimeout?"undefined"!==typeof sessionStorage&&(sessionStorage.ABTastyDontRun="true"):"undefined"!==typeof ABTastyFrameworkCode&&eval(ABTastyFrameworkCode)});c.appendChild(a)}
+      var ABTastyAccID = "<?php echo get_option('abtasty_js_clientid');?>";
+
+      (function(i,s,o,g,r,a,m){i[r]=i[r]||[],i['abtiming']=1*new Date();
+      a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//cdn.abtasty.co/' + ABTastyAccID + '.js','_abtasty');
     })();
-  </script>
+    </script>
   
-  
-  ';
+<?php
 	
 	
 	

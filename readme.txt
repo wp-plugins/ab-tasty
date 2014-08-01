@@ -3,8 +3,8 @@ Contributors: www.abtasty.com
 Donate link: 
 Tags: AB Tasty, ABTasty, A/B Testing, AB testing, testing, split testing, optimization, ab tests, a b tests, conversion, landing pages, conversion rate, call to action, saas, multivariate
 Requires at least: 3.3
-Tested up to: 3.8
-Stable tag: 1.4
+Tested up to: 3.9.1
+Stable tag: 1.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

@@ -1,7 +1,7 @@
 <style type="text/css">
     .wrap>table td>div  {
         /*border-right: grey thin dotted;*/
-		border-top: grey thin dotted;
+                border-top: grey thin dotted;
         width: 80%;
         padding: 1em;
     }
@@ -9,7 +9,7 @@
        /* height: 145px;*/
     }
     .abtasty_faq  {
-        height: 170px;
+        height: 190px;
     }
     .abtasty_howto  {
         /*height: 269px;*/
@@ -22,20 +22,20 @@
 </style>
 
 <div class="wrap">
-	<table>
-		<tr>
-			<td>
-				<h1>Welcome on the AB Tasty plugin !</h1>
-				<p>AB Tasty helps you create and manage AB Tests on your website.<br>
-				This plugin will automatically paste the AB Tasty code to your whole website.<br>
-				If you have any question, feel free to contact us using the form below.</p>				</p>
-			</td>
-			<td>
-			<img src="../wp-content/plugins/ab-tasty/img/logo_AB_Tasty.png" title="ABTasty" style="margin-left:25px" alt="ABTasty"/>
+        <table>
+                <tr>
+                        <td>
+                                <h1>Welcome on the AB Tasty plugin !</h1>
+                                <p>AB Tasty helps you create and manage AB Tests on your website.<br>
+                                This plugin will automatically paste the AB Tasty code to your whole website.<br>
+                                If you have any question, feel free to contact us using the form below.</p>				</p>
+                        </td>
+                        <td>
+                        <img src="../wp-content/plugins/ab-tasty/img/logo_AB_Tasty.png" title="ABTasty" style="margin-left:25px" alt="ABTasty"/>
 
-			</td>
-		</tr>
-	</table>
+                        </td>
+                </tr>
+        </table>
     <table>
         <tr valign="top">
             <td>
@@ -71,22 +71,22 @@
                                 <th scope="row"></th>
                                 <td>
                                     <input type="submit" name="submit" id="submit" class="button-primary" value="Update"> or 
-									<input type="button" class="button-primary" value="I don't have an account" onclick="window.open('http://en.abtasty.com/offer')">
+                                                                        <input type="button" class="button-primary" value="I don't have an account" onclick="window.open('http://en.abtasty.com/offer')">
                                 </td>
                             </tr>
                         </table>
                     </form>
                 </div>
             </td>
-			<td rowspan="3">
+                        <td rowspan="3">
                 <div class="abtasty_howto">
                     <h2>How to find your client ID?</h2>
                     <p>
                         In your AB Tasty dashboard click on "AB Tasty Tag".<br>
-						<a href="../wp-content/plugins/ab-tasty/img/screen1.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen1.png" width="300px"></a><br><br><br>
+                                                <a href="../wp-content/plugins/ab-tasty/img/screen1.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen1.png" width="300px"></a><br><br><br>
 
-						Pick up your Client ID in the second area.
-						<a href="../wp-content/plugins/ab-tasty/img/screen2.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen2.png" width="300px"></a>
+                                                Pick up your Client ID in the second area.
+                                                <a href="../wp-content/plugins/ab-tasty/img/screen2.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen2.png" width="300px"></a>
                     </p>
                 </div>
             </td>
@@ -95,48 +95,22 @@
         <tr valign="top">
             <td>
                 <div class="abtasty_faq">
-                    <h2>FAQ</h2>
+                    <h2>Frequently Asked Questions</h2>
                     <ul>
-						<li><a href="https://support.abtasty.com/hc/en-us/sections/200282367-Our-Answers" >The more frequently asked questions</a></li>
-						<li><a href="https://support.abtasty.com/hc/en-us/articles/200238677-Quick-Start-Guide" >Quick Starter Guide</a></li>
-                        <li><a href="https://support.abtasty.com/hc/en-us/articles/200288876-How-can-I-test-a-page-that-requires-a-login-or-one-that-requires-session-information-" >How to test a page that requires a login</a></li>
-						<li><a href="https://support.abtasty.com/hc/en-us/articles/200321596-Recommendations-for-validating-a-test-before-publication" >Recommandations before publication</a></li>
+                        <li><a target="_blank" href="https://support.abtasty.com/hc/en-us/articles/201122467-How-does-AB-Tasty-work-">How does AB Tasty work ?</a></li>
+                        <li><a target="_blank" href="https://support.abtasty.com/hc/en-us/articles/201176196-Can-I-carry-out-tests-without-the-help-of-my-technical-teams-">Can I carry out tests without the help of my technical teams ?</a></li>
+                        <li><a target="_blank" href="https://support.abtasty.com/hc/en-us/articles/200238597-Can-A-B-testing-penalize-my-organic-search-rankings-SEO-">What impact will A/B testing have on my natural search rankings ?</a></li>
+                        <li><a target="_blank" href="https://support.abtasty.com/hc/en-us/articles/200238547-Could-your-solution-slow-down-or-block-my-website-">Could your solution slow or block my website ?</a></li>
+                        <li><a target="_blank" href="https://support.abtasty.com/hc/en-us/articles/200238577-Is-AB-Tasty-suitable-for-sites-with-very-high-volumes-of-traffic-">Is your solution suitable for websites with very high volumes of traffic ?</a></li>
+                        <li><a target="_blank" href="https://support.abtasty.com/hc/en-us/sections/200282367-Our-Answers">More questions</a></li>
                     </ul>
-                </div>
-            </td>
-        </tr>
-        <tr valign="top">
-            <td>
-                <div class="abtasty_actu">
-                    <h2>News</h2>
-                    <?php
-                    $xmlfile = file_get_contents('http://abtasty.com/rss.php');
-                    if ($xmlfile)  {
-                        $rss = new SimpleXMLElement($xmlfile);
-                        // echo $rss->channel->item->count();
-                        for ($i = 0; $i < $abtasty_max_news and $i < $abtasty_max_news; ++$i)
-                        {
-                            $item = $rss->channel->item[$i];
-                        ?>
-                        <div class="abtasty_article">
-                            <h4><a target="_blank" href="<?php echo str_replace('s=rss','s=wordpress&m=plugin',$item->link); ?>"><?php echo $item->title; ?></a></h4>
-                            <p><?php echo $item->description; ?></p>
-                        </div>
-                        <?php
-                        }
-                            // $rss->channel->item);
-                    }
-                    else  {
-                        echo '<h2>Error loading.</h2>';
-                    }
-                    ?>
                 </div>
             </td>
         </tr>
         <tr>
             <td>
                 <div class="abtasty_contact">
-                    <h2>Contact</h2>
+                    <h2>How to contact us ?</h2>
                     <form action="http://en.abtasty.com/contact" method="post">
                         <table class="form-table">
                             <tr valign="top">

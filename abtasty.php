@@ -39,16 +39,8 @@ function abtasty()
 {
     echo "<!-- http://www.abtasty.com -->\n";
 ?>
-    <script>
-    (function(){
-      var ABTastyAccID = "<?php echo get_option('abtasty_js_clientid');?>";
-
-      (function(i,s,o,g,r,a,m){i[r]=i[r]||[],i['abtiming']=1*new Date();
-      a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//cdn.abtasty.co/' + ABTastyAccID + '.js','_abtasty');
-    })();
-    </script>
+	
+	<script type="text/javascript" src="//try.abtasty.com/<?php echo get_option('abtasty_js_clientid');?>.js"></script>
   
 <?php
 	

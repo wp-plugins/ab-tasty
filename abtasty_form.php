@@ -86,7 +86,7 @@
                                                 <a href="../wp-content/plugins/ab-tasty/img/screen1.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen1.png" width="300px"></a><br><br><br>
 
                                                 Pick up your Client ID in the second area.
-                                                <a href="../wp-content/plugins/ab-tasty/img/screen2.png" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen2.png" width="300px"></a>
+                                                <a href="../wp-content/plugins/ab-tasty/img/screen2.jpg" target="_blank"><img src="../wp-content/plugins/ab-tasty/img/screen2.png" width="300px"></a>
                     </p>
                 </div>
             </td>

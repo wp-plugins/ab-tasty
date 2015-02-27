@@ -3,7 +3,7 @@
  * Plugin Name: ABTasty
  * Plugin URI: http://www.abtasty.com
  * Description: AB Tasty wordpress Plugin
- * Version: 2.1
+ * Version: 2.2
  * Author: ABTasty
  * Author URI: http://www.abtasty.com
  * License: none
